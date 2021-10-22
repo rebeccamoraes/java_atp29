@@ -1,4 +1,4 @@
-package view;
+package model;
 
 public class Categoria extends Base {
     public String nome;
