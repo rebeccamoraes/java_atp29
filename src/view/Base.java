@@ -13,4 +13,13 @@ public class Base {
     public int getId() {
         return id;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Base) {
+            Base outro = (Base) obj;
+            return outro.id == this.id;
+        }
+        return false;
+    }
 }
