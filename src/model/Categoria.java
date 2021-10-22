@@ -25,7 +25,7 @@ public class Categoria extends Base {
     
     @Override
     public String toString() {
-        String texto = "Categoria: " + this.nome + " - " + this.descricao;
+        String texto = "\nCategoria: " + this.nome + " - " + this.descricao;
         return texto;
     }
 }

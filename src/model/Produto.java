@@ -9,6 +9,7 @@ public class Produto extends Base {
     /** Construtor genérico para inicializar id */
     public Produto() {
         super();
+        this.categoria = new Categoria();
     }
 
     /**
@@ -28,7 +29,7 @@ public class Produto extends Base {
 
     @Override
     public String toString() {
-        return "\nNome: " + this.nome + this.categoria + String.format("\nPreço: R$%.2f", this.preco) + "\nQuantidade: "
-                + this.quantidade;
+        return "\nID: " + this.getId() + "\nNome: " + this.nome + this.categoria
+                + String.format("\nPreço: R$%.2f", this.preco) + "\nQuantidade: " + this.quantidade;
     }
 }
